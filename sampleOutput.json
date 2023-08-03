@@ -1,0 +1,16 @@
+{
+  "status": "ok",
+  "totalResults": 1,
+  "articles": [
+    {
+      "source": { "id": "bbc-news", "name": "BBC News" },
+      "author": "BBC News",
+      "title": "Watch: Snake stops play at Sri Lanka cricket match",
+      "description": "The reptile slithered onto a Lanka Premier League game in Colombo, Sri Lanka, bringing play to a halt.",
+      "url": "http://www.bbc.co.uk/news/world-asia-66373467",
+      "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/12070/production/_130604837_p0g44g33.jpg",
+      "publishedAt": "2023-08-02T01:37:18.3891233Z",
+      "content": "A large snake slithered onto a Lanka Premier League game in Colombo, Sri Lanka, bringing play to a halt.\r\nThe reptile, believed to be a non-venomous rat snake, was ushered off the grounds before the … [+51 chars]"
+    }
+  ]
+}
