@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
@@ -6,9 +7,9 @@ export default class Navbar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg bg-dark">
           <div className="container-fluid">
-            <a className="navbar-brand text-white" href="/">
+            <Link className="navbar-brand text-white" to="/">
               Navbar
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -26,49 +27,49 @@ export default class Navbar extends Component {
             >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item">
-                  <a
+                  <Link
                     className="nav-link active text-white"
                     aria-current="page"
-                    href="/"
+                    to="/"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/business">
-                    business{" "}
-                  </a>
+                  <Link className="nav-link text-white" to="/business">
+                    Business{" "}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/">
-                    entertainment{" "}
-                  </a>
+                  <Link className="nav-link text-white" to="/entertainment">
+                    Entertainment{" "}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/general">
-                    general{" "}
-                  </a>
+                  <Link className="nav-link text-white" to="/general">
+                    General{" "}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/health">
-                    health{" "}
-                  </a>
+                  <Link className="nav-link text-white" to="/health">
+                    Health{" "}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/science">
-                    science{" "}
-                  </a>
+                  <Link className="nav-link text-white" to="/science">
+                    Science{" "}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/sports">
-                    sports{" "}
-                  </a>
+                  <Link className="nav-link text-white" to="/sports">
+                    Sports{" "}
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/technology">
-                    technology
-                  </a>
+                  <Link className="nav-link text-white" to="/technology">
+                    Technology
+                  </Link>
                 </li>
               </ul>
             </div>
