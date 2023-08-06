@@ -5,7 +5,7 @@ import loadingCircle from "./loadingCircle.gif";
 export default class Spinner extends Component {
   render() {
     return (
-      <div className="text-center">
+      <div className="text-center my-3">
         <img src={loadingCircle} alt="Loading" width={200} />
       </div>
     );

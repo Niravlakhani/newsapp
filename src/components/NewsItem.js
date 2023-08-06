@@ -2,12 +2,19 @@ import React, { Component } from "react";
 
 export default class NewsItem extends Component {
   render() {
-    const { title, description, imageUrl, newUrl } = this.props;
+    const { title, description, imageUrl, newUrl, author, date, source } =
+      this.props;
     return (
       <div className="container my-3">
         <div className="row">
           <div className="col-md-4">
-            <div className="card" style={{ width: "18rem" }}>
+            <div className="card" style={{ width: "22rem" }}>
+              <span
+                class="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
+                style={{ left: "91%", zIndex: "1" }}
+              >
+                {source}
+              </span>
               <img
                 src={
                   !!imageUrl
@@ -28,6 +35,13 @@ export default class NewsItem extends Component {
                     ? `${description.slice(0, 88)}...`
                     : description}
                 </p>
+                <p className="card-text">
+                  <small className="text-body-secondary">
+                    By {!!author ? author : "Unknown"} on{" "}
+                    {new Date(date).toGMTString()}
+                  </small>
+                </p>
+
                 <a
                   rel="noreferrer"
                   href={newUrl}
