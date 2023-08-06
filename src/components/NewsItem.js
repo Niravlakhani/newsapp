@@ -9,12 +9,14 @@ export default class NewsItem extends Component {
         <div className="row">
           <div className="col-md-4">
             <div className="card" style={{ width: "22rem" }}>
-              <span
-                class="position-absolute top-0 translate-middle badge rounded-pill bg-danger"
-                style={{ left: "91%", zIndex: "1" }}
-              >
-                {source}
-              </span>
+              <div className="d-flex position-absolute end-0 justify-content-end">
+                <span
+                  class="badge rounded-pill bg-danger"
+                  style={{ left: "91%", zIndex: "1" }}
+                >
+                  {source}
+                </span>
+              </div>
               <img
                 src={
                   !!imageUrl
